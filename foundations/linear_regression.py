@@ -13,5 +13,5 @@ class Solution:
         # Compute mean squared error between predictions and ground truth
         # Round to 5 decimal places
         size = np.size(model_prediction,axis=0) # Across rows
-        return np.round((1 / model_prediction.size) * np.sum((model_prediction - ground_truth) ** 2), 5) # we only have one row
+        return np.round((1 / model_prediction.size) * np.sum((model_prediction - ground_truth) ** 2), 5) # We have a 1D vector
 
